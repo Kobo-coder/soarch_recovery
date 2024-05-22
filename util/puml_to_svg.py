@@ -24,5 +24,3 @@ class PUML_to_SVG:
                         end_index = towrite.find('</svg>') + len('</svg>')
                         content = towrite[start_index:end_index]
                         svg.write(content)
-                    p = f'{self.output_dir+"/"+file.stem+".svg"}'
-                    subprocess.run(["open", p])

@@ -1,0 +1,1367 @@
+../api/zeeguu/core/user_activity_hooks/article_interaction_hooks.py
+    F 37:0 article_feedback - A
+    F 12:0 distill_article_interactions - A
+    F 90:0 article_opened - A
+    F 76:0 article_liked - A
+../api/zeeguu/core/account_management/user_account_creation.py
+    F 24:0 create_account - B
+    F 97:0 create_basic_account - B
+    F 8:0 valid_invite_code - A
+../api/zeeguu/core/word_scheduling/basicSR/basicSR.py
+    M 59:4 BasicSRSchedule.update_schedule - B
+    M 117:4 BasicSRSchedule.update - A
+    M 177:4 BasicSRSchedule.priority_bookmarks_to_study - A
+    C 29:0 BasicSRSchedule - A
+    M 155:4 BasicSRSchedule.find_or_create - A
+    M 42:4 BasicSRSchedule.__init__ - A
+    M 289:4 BasicSRSchedule.print_schedule_for_user - A
+    M 51:4 BasicSRSchedule.set_bookmark_as_learned - A
+    M 143:4 BasicSRSchedule.get_current_study_window - A
+    M 241:4 BasicSRSchedule.bookmarks_to_study - A
+    M 256:4 BasicSRSchedule.bookmarks_in_pipeline - A
+    M 268:4 BasicSRSchedule.total_bookmarks_in_pipeline - A
+    M 279:4 BasicSRSchedule.schedule_for_user - A
+../api/zeeguu/core/word_scheduling/adaptive/scheduling_algo.py
+    F 147:0 updateSchedulingInfo - A
+    F 72:0 getWordsToStudy - A
+../api/zeeguu/core/test/test_retrieve_and_compute.py
+    C 16:0 TestRetrieveAndCompute - A
+    M 23:4 TestRetrieveAndCompute.testDifficultyOfFeedItems - A
+    M 78:4 TestRetrieveAndCompute.test_ml_classification - A
+    M 32:4 TestRetrieveAndCompute.testDownloadWithTopic - A
+    M 47:4 TestRetrieveAndCompute.test_sufficient_quality - A
+    M 54:4 TestRetrieveAndCompute.test_new_scientist_overlay - A
+    M 62:4 TestRetrieveAndCompute.test_le_monde_subscription - A
+    M 70:4 TestRetrieveAndCompute.test_fragment_removal - A
+    M 17:4 TestRetrieveAndCompute.setUp - A
+../api/zeeguu/core/test/test_user.py
+    M 20:4 UserTest.test_create_anonymous - A
+    M 93:4 UserTest.test_bookmarks_by_date - A
+    M 107:4 UserTest.test_bookmark_counts_by_date - A
+    C 15:0 UserTest - A
+    M 37:4 UserTest.test_date_of_last_bookmark - A
+    M 49:4 UserTest.test_active_during_recent - A
+    M 75:4 UserTest.test_all_bookmarks - A
+    M 83:4 UserTest.test_bookmarks_chronologically - A
+    M 57:4 UserTest.test_validate_email - A
+    M 61:4 UserTest.test_validate_password - A
+    M 65:4 UserTest.test_validate_name - A
+    M 69:4 UserTest.test_update_password - A
+    M 129:4 UserTest.test_exists - A
+    M 132:4 UserTest.test_authorize - A
+    M 139:4 UserTest.test_authorize_anonymous - A
+    M 16:4 UserTest.setUp - A
+    M 150:4 UserTest.__truncate_time_from_date - A
+../api/zeeguu/core/test/test_logging.py
+    C 6:0 LoggingTest - A
+    M 7:4 LoggingTest.test_logging - A
+../api/zeeguu/core/test/test_user_word.py
+    C 12:0 UserWordTest - A
+    M 42:4 UserWordTest.test_find_all - A
+    M 16:4 UserWordTest.test_importance_level - A
+    M 24:4 UserWordTest.test_find - A
+    M 32:4 UserWordTest.test_find_or_create - A
+    M 50:4 UserWordTest.test_exists - A
+    M 13:4 UserWordTest.setUp - A
+    M 54:4 UserWordTest.__get_random_word_stats - A
+../api/zeeguu/core/test/test_feed.py
+    C 12:0 FeedTest - A
+    M 21:4 FeedTest.test_feed_items - A
+    M 25:4 FeedTest.test_feed_newspaper - A
+    M 30:4 FeedTest.test_feed_type - A
+    M 38:4 FeedTest.test_article_ordering - A
+    M 34:4 FeedTest.test_after_date_works - A
+    M 13:4 FeedTest.setUp - A
+../api/zeeguu/core/test/test_localized_topic.py
+    C 18:0 LocalizedTopicTest - A
+    M 39:4 LocalizedTopicTest._localized_topic_keyword_in_url - A
+    M 19:4 LocalizedTopicTest.setUp - A
+    M 23:4 LocalizedTopicTest.test_topic_matching - A
+    M 31:4 LocalizedTopicTest.test_topic_matching_is_case_sensitive - A
+../api/zeeguu/core/test/test_user_article.py
+    C 16:0 UserArticleTest - A
+    M 24:4 UserArticleTest.test_article_is_not_starred_initially - A
+    M 27:4 UserArticleTest.test_all_starred_articles - A
+    M 31:4 UserArticleTest.test_all_starred_or_liked_articles - A
+    M 17:4 UserArticleTest.setUp - A
+../api/zeeguu/core/test/test_text.py
+    C 7:0 TextTest - A
+    M 8:4 TextTest.setUp - A
+    M 15:4 TextTest.test_user_word_count - A
+../api/zeeguu/core/test/test_difficulty_estimator_factory.py
+    C 10:0 DifficultyEstimatorFactoryTest - A
+    M 27:4 DifficultyEstimatorFactoryTest.test_custom_names_flesch_kincaid_estimator - A
+    M 12:4 DifficultyEstimatorFactoryTest.test_ignore_capitalization - A
+    M 17:4 DifficultyEstimatorFactoryTest.test_unknown_type_returns_default - A
+    M 22:4 DifficultyEstimatorFactoryTest.test_returns_flesch_kincaid_estimator - A
+../api/zeeguu/core/test/test_cohort.py
+    M 31:4 CohortTest.test_all_cohorts - A
+    C 13:0 CohortTest - A
+    M 14:4 CohortTest.setUp - A
+    M 23:4 CohortTest.test_teacher_has_students - A
+    M 27:4 CohortTest.test_is_teacher - A
+    M 40:4 CohortTest.test_cohort_still_has_capacity_true - A
+    M 44:4 CohortTest.test_cohort_still_has_capacity_false - A
+../api/zeeguu/core/test/test_domain.py
+    M 39:4 DomainTest.test_one_domain_multiple_urls - B
+    C 15:0 DomainTest - A
+    M 22:4 DomainTest.test_url_domain - A
+    M 16:4 DomainTest.setUp - A
+../api/zeeguu/core/test/test_url.py
+    C 11:0 UrlTest - A
+    M 39:4 UrlTest.test_try_to_get_race_condition - A
+    M 16:4 UrlTest.test_domain_plus_path_must_be_unique - A
+    M 12:4 UrlTest.setUp - A
+    M 30:4 UrlTest.test_find_or_create_works - A
+../api/zeeguu/core/test/test_bookmark.py
+    M 201:4 BookmarkTest.test_is_learned_based_on_exercise_outcomes - B
+    M 74:4 BookmarkTest.test_add_exercise_outcome - A
+    M 96:4 BookmarkTest.test_bad_quality_bookmark - A
+    M 106:4 BookmarkTest.test_fit_for_study - A
+    C 23:0 BookmarkTest - A
+    M 137:4 BookmarkTest.test_find_by_specific_user - A
+    M 144:4 BookmarkTest.test_find_all - A
+    M 186:4 BookmarkTest.test_latest_exercise_outcome - A
+    M 31:4 BookmarkTest.test_user_has_bookmarks - A
+    M 40:4 BookmarkTest.test_add_new_exercise - A
+    M 49:4 BookmarkTest.test_bookmarks_to_study_is_not_empty - A
+    M 55:4 BookmarkTest.test_translation - A
+    M 59:4 BookmarkTest.test_bookmarks_in_article - A
+    M 67:4 BookmarkTest.test_text_is_not_too_long - A
+    M 90:4 BookmarkTest.test_user_bookmark_count - A
+    M 93:4 BookmarkTest.test_bookmark_is_serializable - A
+    M 120:4 BookmarkTest.test_add_new_exercise_result - A
+    M 151:4 BookmarkTest.find_all_for_user_and_text - A
+    M 159:4 BookmarkTest.test_find - A
+    M 165:4 BookmarkTest.test_find_all_by_user_and_word - A
+    M 173:4 BookmarkTest.test_find_by_user_word_and_text - A
+    M 181:4 BookmarkTest.test_exists - A
+    M 264:4 BookmarkTest.test_top_bookmarks - A
+    M 24:4 BookmarkTest.setUp - A
+    M 34:4 BookmarkTest._helper_create_exercise - A
+../api/zeeguu/core/test/mocking_the_web.py
+    F 83:0 mock_requests_get - A
+    F 95:0 mock_readability_call - A
+../api/zeeguu/core/test/test_article.py
+    C 17:0 ArticleTest - A
+    M 24:4 ArticleTest.test_articles_are_different - A
+    M 27:4 ArticleTest.test_article_representation_does_not_error - A
+    M 30:4 ArticleTest.test_add_topic - A
+    M 37:4 ArticleTest.test_find_or_create - A
+    M 41:4 ArticleTest.test_load_article_without_language_information - A
+    M 18:4 ArticleTest.setUp - A
+../api/zeeguu/core/test/test_user_preferences.py
+    C 9:0 UserPreferenceTest - A
+    M 35:4 UserPreferenceTest.test_text_difficulty_with_preference - A
+    M 27:4 UserPreferenceTest.test_no_preference_at_first - A
+    M 30:4 UserPreferenceTest.test_setting_preference - A
+    M 10:4 UserPreferenceTest.setUp - A
+../api/zeeguu/core/test/test_language.py
+    M 19:4 LanguageTest.test_languages_exists - A
+    C 14:0 LanguageTest - A
+    M 32:4 LanguageTest.test_get_all_languages - A
+    M 38:4 LanguageTest.test_user_set_language - A
+    M 44:4 LanguageTest.test_native_language - A
+    M 15:4 LanguageTest.setUp - A
+../api/zeeguu/core/test/model_test_mixin.py
+    C 14:0 ModelTestMixIn - A
+    M 15:4 ModelTestMixIn.setUp - A
+    M 18:4 ModelTestMixIn.tearDown - A
+    M 31:4 ModelTestMixIn.run - A
+../api/zeeguu/core/test/rules/exercise_rule.py
+    C 9:0 ExerciseRule - A
+    M 22:4 ExerciseRule._create_model_object - A
+    M 15:4 ExerciseRule.__init__ - A
+    M 36:4 ExerciseRule._exists_in_db - A
+../api/zeeguu/core/test/rules/exercise_session_rule.py
+    C 8:0 ExerciseSessionRule - A
+    M 14:4 ExerciseSessionRule.__init__ - A
+    M 21:4 ExerciseSessionRule._create_model_object - A
+../api/zeeguu/core/test/rules/outcome_rule.py
+    C 9:0 OutcomeRule - A
+    M 26:4 OutcomeRule.__get_or_create_outcome - A
+    M 33:4 OutcomeRule.__create_new_outcome - A
+    M 41:4 OutcomeRule.show_solution - A
+    M 45:4 OutcomeRule.retry - A
+    M 49:4 OutcomeRule.correct - A
+    M 53:4 OutcomeRule.wrong - A
+    M 57:4 OutcomeRule.typo - A
+    M 61:4 OutcomeRule.too_easy - A
+    M 65:4 OutcomeRule.random - A
+../api/zeeguu/core/test/rules/cohort_rule.py
+    C 8:0 CohortRule - A
+    M 13:4 CohortRule.__init__ - A
+    M 32:4 CohortRule._create_model_object - A
+    M 42:4 CohortRule._exists_in_db - A
+../api/zeeguu/core/test/rules/url_rule.py
+    C 6:0 UrlRule - A
+    M 19:4 UrlRule._create_model_object - A
+    M 12:4 UrlRule.__init__ - A
+    M 31:4 UrlRule._exists_in_db - A
+../api/zeeguu/core/test/rules/user_article_rule.py
+    C 14:0 UserArticleRule - A
+    M 28:4 UserArticleRule._create_model_object - A
+    M 21:4 UserArticleRule.__init__ - A
+    M 40:4 UserArticleRule._exists_in_db - A
+../api/zeeguu/core/test/rules/language_rule.py
+    C 10:0 LanguageRule - A
+    M 32:4 LanguageRule.get_or_create_language - A
+    M 39:4 LanguageRule.__create_new_language - A
+    M 52:4 LanguageRule.da - A
+    M 56:4 LanguageRule.de - A
+    M 60:4 LanguageRule.en - A
+    M 64:4 LanguageRule.es - A
+    M 68:4 LanguageRule.fr - A
+    M 72:4 LanguageRule.it - A
+    M 76:4 LanguageRule.nl - A
+    M 80:4 LanguageRule.no - A
+    M 84:4 LanguageRule.pt - A
+    M 88:4 LanguageRule.ro - A
+    M 92:4 LanguageRule.random - A
+../api/zeeguu/core/test/rules/user_exercise_session_rule.py
+    C 8:0 ExerciseSessionRule - A
+    M 14:4 ExerciseSessionRule.__init__ - A
+    M 21:4 ExerciseSessionRule._create_model_object - A
+../api/zeeguu/core/test/rules/bookmark_rule.py
+    M 27:4 BookmarkRule._create_model_object - B
+    C 13:0 BookmarkRule - A
+    M 21:4 BookmarkRule.__init__ - A
+    M 91:4 BookmarkRule._exists_in_db - A
+    M 95:4 BookmarkRule.__get_random_word_from_sentence - A
+../api/zeeguu/core/test/rules/article_rule.py
+    C 12:0 ArticleRule - A
+    M 19:4 ArticleRule.__init__ - A
+    M 30:4 ArticleRule._create_model_object - A
+    M 50:4 ArticleRule._exists_in_db - A
+../api/zeeguu/core/test/rules/feed_rule.py
+    C 15:0 FeedRule - A
+    M 77:4 FeedRule._create_model_object - A
+    M 22:4 FeedRule.__init__ - A
+    M 74:4 FeedRule._exists_in_db - A
+../api/zeeguu/core/test/rules/source_rule.py
+    C 10:0 SourceRule - A
+    M 24:4 SourceRule.__get_or_create_source - A
+    M 31:4 SourceRule.__create_new_source - A
+    M 45:4 SourceRule.recognize - A
+    M 49:4 SourceRule.translate - A
+    M 53:4 SourceRule.zeekoe - A
+    M 57:4 SourceRule.random - A
+../api/zeeguu/core/test/rules/user_word_rule.py
+    M 20:4 UserWordRule._create_model_object - A
+    C 6:0 UserWordRule - A
+    M 12:4 UserWordRule.__init__ - A
+    M 38:4 UserWordRule._exists_in_db - A
+../api/zeeguu/core/test/rules/user_reading_session_rule.py
+    C 10:0 ReadingSessionRule - A
+    M 16:4 ReadingSessionRule.__init__ - A
+    M 23:4 ReadingSessionRule._create_model_object - A
+../api/zeeguu/core/test/rules/text_rule.py
+    C 8:0 TextRule - A
+    M 21:4 TextRule._create_model_object - A
+    M 14:4 TextRule.__init__ - A
+    M 36:4 TextRule._exists_in_db - A
+../api/zeeguu/core/test/rules/base_rule.py
+    C 7:0 BaseRule - A
+    M 28:4 BaseRule.save - A
+    M 36:4 BaseRule._create_model_object - A
+    M 40:4 BaseRule._exists_in_db - A
+../api/zeeguu/core/test/rules/user_rule.py
+    C 8:0 UserRule - A
+    M 21:4 UserRule._create_model_object - A
+    M 47:4 UserRule.add_bookmarks - A
+    M 14:4 UserRule.__init__ - A
+    M 44:4 UserRule._exists_in_db - A
+../api/zeeguu/core/test/tests_difficulty_estimator_strategies/test_default_difficulty_estimator.py
+    C 12:0 DefaultDifficultyEstimatorTest - A
+    M 19:4 DefaultDifficultyEstimatorTest.test_compute_simple_text_difficulty - A
+    M 25:4 DefaultDifficultyEstimatorTest.test_compute_complex_text_difficulty - A
+    M 14:4 DefaultDifficultyEstimatorTest.setUp - A
+../api/zeeguu/core/test/tests_difficulty_estimator_strategies/test_frequency_difficulty_estimator.py
+    C 13:0 FrequencyDifficultyEstimatorTest - A
+    M 20:4 FrequencyDifficultyEstimatorTest.test_compute_very_simple_text_difficulty - A
+    M 15:4 FrequencyDifficultyEstimatorTest.setUp - A
+../api/zeeguu/core/test/tests_difficulty_estimator_strategies/test_flesch_kincaid_difficulty_estimator.py
+    C 45:0 FleschKincaidReadingEaseDifficultyEstimatorTest - A
+    M 46:4 FleschKincaidReadingEaseDifficultyEstimatorTest.setUp - A
+    M 51:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_recognized_by_FKIndex - A
+    M 55:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_recognized_by_FK - A
+    M 59:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_recognized_by_flesch_kincaid - A
+    M 64:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_normalized_above_100 - A
+    M 68:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_normalized_100 - A
+    M 72:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_normalized_between_100_and_0 - A
+    M 76:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_normalized_0 - A
+    M 80:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_normalized_below_0 - A
+    M 85:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_discrete_above_80 - A
+    M 89:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_discrete_80 - A
+    M 93:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_discrete_between_80_and_50 - A
+    M 97:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_discrete_50 - A
+    M 101:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_discrete_below_50 - A
+    M 105:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_discrete_below_0 - A
+    M 110:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_english_constants - A
+    M 117:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_german_constants - A
+    M 125:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_english_easy - A
+    M 133:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_english_medium - A
+    M 141:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_english_hard - A
+    M 151:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_german_easy - A
+    M 159:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_german_medium - A
+    M 167:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_german_hard - A
+    M 176:4 FleschKincaidReadingEaseDifficultyEstimatorTest.test_danish - A
+../api/zeeguu/core/util/time.py
+    F 31:0 get_server_time_utc - A
+    F 44:0 normalize_to_server_time - A
+../api/zeeguu/core/util/encoding.py
+    F 14:0 _encoder - A
+    C 9:0 JSONSerializable - A
+    F 20:0 encode - A
+    F 24:0 encode_error - A
+    F 28:0 datetime_to_json - A
+    M 10:4 JSONSerializable.serialize - A
+../api/zeeguu/core/util/timer_logging_decorator.py
+    F 7:0 time_this - A
+../api/zeeguu/core/util/hash.py
+    F 5:0 text_hash - A
+    F 15:0 password_hash - A
+../api/zeeguu/core/util/text.py
+    F 45:0 number_of_syllables - A
+    F 21:0 split_unique_words_from_text - A
+    F 39:0 median_sentence_length - A
+    F 63:0 median_word_length - A
+    F 17:0 split_words_from_text - A
+    F 26:0 length - A
+    F 29:0 unique_length - A
+    F 33:0 number_of_sentences - A
+    F 36:0 average_sentence_length - A
+    F 60:0 average_word_length - A
+../api/zeeguu/core/elastic/elastic_query_builder.py
+    F 20:0 build_elastic_recommender_query - B
+    F 16:0 array_of_lowercase_topics - A
+    F 140:0 build_elastic_search_query - A
+    F 4:0 match - A
+    F 8:0 exists - A
+    F 12:0 add_to_dict - A
+../api/zeeguu/core/elastic/indexing.py
+    F 8:0 find_topics - A
+    F 41:0 create_or_update - A
+    F 54:0 index_in_elasticsearch - A
+    F 71:0 remove_from_index - A
+    F 21:0 document_from_article - A
+../api/zeeguu/core/word_stats/__init__.py
+    F 6:0 lang_info - A
+../api/zeeguu/core/content_recommender/elastic_recommender.py
+    F 231:0 topic_filter_for_user - C
+    F 31:0 _prepare_user_constraints - A
+    F 82:0 article_recommendations_for_user - A
+    F 164:0 article_search_for_user - A
+    F 283:0 _list_to_string - A
+    F 294:0 _difficuty_level_bounds - A
+    F 287:0 _to_articles_from_ES_hits - A
+../api/zeeguu/core/content_quality/quality_filter.py
+    F 48:0 sufficient_quality_plain_text - B
+    F 38:0 sufficient_quality_html - A
+    F 74:0 sufficient_quality - A
+../api/zeeguu/core/content_retriever/parse_with_newspaper.py
+    F 5:0 download_and_parse - A
+../api/zeeguu/core/content_retriever/crawler_exceptions.py
+    C 1:0 FailedToParseWithReadabilityServer - A
+    C 10:0 SkippedForLowQuality - A
+    M 2:4 FailedToParseWithReadabilityServer.__init__ - A
+    C 6:0 SkippedForTooOld - A
+    M 11:4 SkippedForLowQuality.__init__ - A
+    C 15:0 SkippedAlreadyInDB - A
+../api/zeeguu/core/content_retriever/__init__.py
+    F 4:0 download_and_parse - A
+../api/zeeguu/core/content_retriever/parse_with_readability_server.py
+    F 13:0 download_and_parse - A
+../api/zeeguu/core/content_retriever/video_dowloader.py
+    F 29:0 get_videos_from_local_csv - A
+    F 63:0 download_individual_video - A
+    F 50:0 download - A
+../api/zeeguu/core/content_retriever/article_downloader.py
+    F 59:0 download_from_feed - D
+    F 216:0 download_feed_item - A
+    F 271:0 add_topics - A
+    F 48:0 banned_url - A
+    F 36:0 _url_after_redirects - A
+    F 42:0 _date_in_the_future - A
+../api/zeeguu/core/language/difficulty_estimator_factory.py
+    C 8:0 DifficultyEstimatorFactory - B
+    M 15:4 DifficultyEstimatorFactory.get_difficulty_estimator - A
+../api/zeeguu/core/language/difficulty_estimator_strategy.py
+    C 6:0 DifficultyEstimatorStrategy - A
+    M 11:4 DifficultyEstimatorStrategy.has_custom_name - A
+    M 24:4 DifficultyEstimatorStrategy.estimate_difficulty - A
+../api/zeeguu/core/language/strategies/word_rank_difficulty_estimator.py
+    M 43:4 WordRankDifficultyEstimator.word_rank_readability_score - C
+    C 12:0 WordRankDifficultyEstimator - B
+    M 105:4 WordRankDifficultyEstimator.normalize_difficulty - A
+    M 114:4 WordRankDifficultyEstimator.discrete_difficulty - A
+    M 22:4 WordRankDifficultyEstimator.estimate_difficulty - A
+    M 98:4 WordRankDifficultyEstimator.get_constants_for_language - A
+../api/zeeguu/core/language/strategies/word_history_difficulty_estimator.py
+    M 79:4 WordHistoryDifficultyEstimator.difficulty - C
+    M 130:4 WordHistoryDifficultyEstimator.difficulty_until_timestamp - C
+    C 14:0 WordHistoryDifficultyEstimator - B
+    M 183:4 WordHistoryDifficultyEstimator.estimate_difficulty - B
+    M 48:4 WordHistoryDifficultyEstimator.recurrence_until_timestamp - B
+    M 24:4 WordHistoryDifficultyEstimator.recurrence - A
+    M 250:4 WordHistoryDifficultyEstimator.word_difficulty - A
+    M 236:4 WordHistoryDifficultyEstimator.discrete_text_difficulty - A
+    M 17:4 WordHistoryDifficultyEstimator.__init__ - A
+../api/zeeguu/core/language/strategies/cognacy_wh_difficulty_estimator.py
+    M 36:4 CognacyWordHistoryDifficultyEstimator.difficulty_until_timestamp - D
+    C 16:0 CognacyWordHistoryDifficultyEstimator - B
+    M 111:4 CognacyWordHistoryDifficultyEstimator.estimate_difficulty - B
+    M 178:4 CognacyWordHistoryDifficultyEstimator.word_difficulty - A
+    M 164:4 CognacyWordHistoryDifficultyEstimator.discrete_text_difficulty - A
+    M 20:4 CognacyWordHistoryDifficultyEstimator.__init__ - A
+../api/zeeguu/core/language/strategies/flesch_kincaid_difficulty_estimator.py
+    M 45:4 FleschKincaidDifficultyEstimator.flesch_kincaid_readability_index - A
+    M 87:4 FleschKincaidDifficultyEstimator.estimate_number_of_syllables_in_word_pyphen - A
+    C 13:0 FleschKincaidDifficultyEstimator - A
+    M 105:4 FleschKincaidDifficultyEstimator.normalize_difficulty - A
+    M 114:4 FleschKincaidDifficultyEstimator.discrete_difficulty - A
+    M 123:4 FleschKincaidDifficultyEstimator.grade_difficulty - A
+    M 72:4 FleschKincaidDifficultyEstimator.get_constants_for_language - A
+    M 79:4 FleschKincaidDifficultyEstimator.estimate_number_of_syllables_in_word - A
+    M 23:4 FleschKincaidDifficultyEstimator.estimate_difficulty - A
+../api/zeeguu/core/language/strategies/default_difficulty_estimator.py
+    C 5:0 DefaultDifficultyEstimator - A
+    M 9:4 DefaultDifficultyEstimator.estimate_difficulty - A
+../api/zeeguu/core/language/strategies/frequency_difficulty_estimator.py
+    M 60:4 FrequencyDifficultyEstimator.estimate_difficulty - A
+    C 9:0 FrequencyDifficultyEstimator - A
+    M 26:4 FrequencyDifficultyEstimator.quadratic - A
+    M 122:4 FrequencyDifficultyEstimator.word_difficulty - A
+    M 108:4 FrequencyDifficultyEstimator.discrete_text_difficulty - A
+    M 13:4 FrequencyDifficultyEstimator.__init__ - A
+../api/zeeguu/core/language/strategies/cognacy_difficulty_estimator.py
+    M 51:4 CognacyDifficultyEstimator.estimate_difficulty - B
+    C 14:0 CognacyDifficultyEstimator - A
+    M 115:4 CognacyDifficultyEstimator.word_difficulty - A
+    M 25:4 CognacyDifficultyEstimator.cognacyRatio - A
+    M 101:4 CognacyDifficultyEstimator.discrete_text_difficulty - A
+    M 18:4 CognacyDifficultyEstimator.__init__ - A
+../api/zeeguu/core/language/services/lingo_rank_service.py
+    F 4:0 retrieve_lingo_rank - A
+../api/zeeguu/core/exercises/similar_words.py
+    F 6:0 similar_words - A
+../api/zeeguu/core/user_statistics/exercise_corectness.py
+    F 8:0 exercise_count_and_correctness_percentage - A
+    F 150:0 exercise_outcome_stats - A
+    F 25:0 number_of_words_translated_but_not_studied - A
+    F 88:0 number_of_distinct_words_in_exercises - A
+    F 123:0 number_of_learned_words - A
+../api/zeeguu/core/user_statistics/exercise_sessions.py
+    F 8:0 total_time_in_exercise_sessions - A
+../api/zeeguu/core/user_statistics/student_overview.py
+    F 14:0 student_activity_overview - A
+../api/zeeguu/core/user_statistics/reading_sessions.py
+    F 10:0 summarize_reading_activity - A
+    F 53:0 reading_sessions - A
+    F 114:0 translations_in_interval - A
+../api/zeeguu/core/user_statistics/activity.py
+    F 24:0 convert_to_date_seconds - A
+    F 9:0 reading_duration_by_day - A
+    F 13:0 exercises_duration_by_day - A
+    F 17:0 activity_duration_by_day - A
+    F 36:0 _time_by_day - A
+../api/zeeguu/core/model/starred_article.py
+    M 70:4 StarredArticle.find_or_create - A
+    C 22:0 StarredArticle - A
+    M 100:4 StarredArticle.delete - A
+    M 50:4 StarredArticle.__init__ - A
+    M 57:4 StarredArticle.__repr__ - A
+    M 60:4 StarredArticle.as_dict - A
+    M 113:4 StarredArticle.all_for_user - A
+../api/zeeguu/core/model/user.py
+    M 663:4 User.levels_for - C
+    M 569:4 User.bookmarks_for_article - B
+    M 79:4 User.create_anonymous - A
+    M 171:4 User.set_learned_language - A
+    M 327:4 User.validate_email - A
+    C 33:0 User - A
+    M 58:4 User.__init__ - A
+    M 123:4 User.details_as_dictionary - A
+    M 220:4 User.get_new_bookmarks_to_study - A
+    M 336:4 User.validate_password - A
+    M 343:4 User.validate_name - A
+    M 473:4 User._to_serializable - A
+    M 608:4 User.bookmarks_by_url_by_date - A
+    M 762:4 User.authorize - A
+    M 144:4 User.preferred_difficulty_estimator - A
+    M 195:4 User.set_learned_language_level - A
+    M 295:4 User.active_during_recent - A
+    M 305:4 User.cohort_articles_for_user - A
+    M 315:4 User.isTeacher - A
+    M 348:4 User.update_password - A
+    M 361:4 User.all_reading_sessions - A
+    M 387:4 User.all_bookmarks - A
+    M 460:4 User._to_date_dict - A
+    M 496:4 User.reading_sessions_by_day - A
+    M 525:4 User.bookmarks_by_date - A
+    M 546:4 User.bookmarks_by_day - A
+    M 621:4 User.bookmark_counts_by_date - A
+    M 654:4 User.user_words - A
+    M 728:4 User.email_exists - A
+    M 741:4 User.all_recent_user_ids - A
+    M 752:4 User.exists - A
+    M 120:4 User.__repr__ - A
+    M 161:4 User.text_difficulty - A
+    M 168:4 User.set_native_language - A
+    M 204:4 User.has_bookmarks - A
+    M 207:4 User.bookmarks_to_study - A
+    M 254:4 User.scheduled_bookmarks - A
+    M 264:4 User.bookmarks_in_pipeline - A
+    M 274:4 User.total_bookmarks_in_pipeline - A
+    M 284:4 User.date_of_last_bookmark - A
+    M 290:4 User.liked_articles - A
+    M 411:4 User.all_bookmarks_fit_for_study - A
+    M 417:4 User.bookmarks_chronologically - A
+    M 423:4 User.starred_bookmarks - A
+    M 436:4 User.learned_bookmarks - A
+    M 451:4 User._datetime_to_date - A
+    M 642:4 User.learner_stats_data - A
+    M 657:4 User.bookmark_count - A
+    M 660:4 User.word_count - A
+    M 718:4 User.find_all - A
+    M 723:4 User.find - A
+    M 737:4 User.find_by_id - A
+    M 774:4 User.authorize_anonymous - A
+    M 778:4 User.create_default_user_preference - A
+../api/zeeguu/core/model/user_language.py
+    M 76:4 UserLanguage.find_or_create - A
+    C 13:0 UserLanguage - A
+    M 106:4 UserLanguage.all_for_user - A
+    M 47:4 UserLanguage.__init__ - A
+    M 69:4 UserLanguage.get - A
+    M 72:4 UserLanguage.__str__ - A
+    M 102:4 UserLanguage.with_language_id - A
+../api/zeeguu/core/model/word_to_study.py
+    C 10:0 WordToStudy - A
+    M 25:4 WordToStudy.__init__ - A
+    M 34:4 WordToStudy.find - A
+../api/zeeguu/core/model/teacher.py
+    C 10:0 Teacher - A
+    M 26:4 Teacher.from_user - A
+    M 15:4 Teacher.__init__ - A
+    M 18:4 Teacher.get_cohorts - A
+    M 22:4 Teacher.exists - A
+../api/zeeguu/core/model/teacher_cohort_map.py
+    C 9:0 TeacherCohortMap - A
+    M 29:4 TeacherCohortMap.get_cohorts_for - A
+    M 35:4 TeacherCohortMap.get_teachers_for - A
+    M 42:4 TeacherCohortMap.find_or_create - A
+    M 20:4 TeacherCohortMap.__init__ - A
+    M 25:4 TeacherCohortMap.is_teacher - A
+../api/zeeguu/core/model/cohort.py
+    M 46:4 Cohort.get_students - A
+    C 9:0 Cohort - A
+    M 39:4 Cohort.cohort_still_has_capacity - A
+    M 22:4 Cohort.__init__ - A
+    M 33:4 Cohort.get_current_student_count - A
+    M 63:4 Cohort.get_teachers - A
+    M 69:4 Cohort.find - A
+    M 73:4 Cohort.find_by_code - A
+    M 77:4 Cohort.get_id - A
+    M 82:4 Cohort.exists_with_invite_code - A
+../api/zeeguu/core/model/personal_copy.py
+    C 11:0 PersonalCopy - A
+    M 22:4 PersonalCopy.__init__ - A
+    M 28:4 PersonalCopy.exists_for - A
+    M 34:4 PersonalCopy.all_for - A
+    M 44:4 PersonalCopy.remove_for - A
+    M 54:4 PersonalCopy.make_for - A
+../api/zeeguu/core/model/article_difficulty_feedback.py
+    C 17:0 ArticleDifficultyFeedback - A
+    M 56:4 ArticleDifficultyFeedback.find_or_create - A
+    M 49:4 ArticleDifficultyFeedback.find - A
+    M 39:4 ArticleDifficultyFeedback.__init__ - A
+    M 45:4 ArticleDifficultyFeedback.__repr__ - A
+../api/zeeguu/core/model/difficulty_lingo_rank.py
+    C 10:0 DifficultyLingoRank - A
+    M 27:4 DifficultyLingoRank.value_for_article - A
+    M 21:4 DifficultyLingoRank.__init__ - A
+../api/zeeguu/core/model/user_article.py
+    M 241:4 UserArticle.user_article_info - B
+    C 23:0 UserArticle - A
+    M 95:4 UserArticle.last_interaction - A
+    M 130:4 UserArticle.find_or_create - A
+    M 214:4 UserArticle.all_starred_and_liked_articles_of_user_info - A
+    M 80:4 UserArticle.set_starred - A
+    M 86:4 UserArticle.set_opened - A
+    M 110:4 UserArticle.find_by_article - A
+    M 117:4 UserArticle.find - A
+    M 186:4 UserArticle.all_starred_articles_of_user_info - A
+    M 233:4 UserArticle.exists - A
+    M 67:4 UserArticle.__init__ - A
+    M 74:4 UserArticle.__repr__ - A
+    M 77:4 UserArticle.user_info_as_string - A
+    M 92:4 UserArticle.set_liked - A
+    M 162:4 UserArticle.all_starred_articles_of_user - A
+    M 168:4 UserArticle.all_liked_articles_of_user - A
+    M 174:4 UserArticle.all_starred_or_liked_articles_of_user - A
+../api/zeeguu/core/model/exercise_outcome.py
+    M 48:4 ExerciseOutcome.free_text_feedback - A
+    M 66:4 ExerciseOutcome.find_or_create - A
+    C 7:0 ExerciseOutcome - A
+    M 34:4 ExerciseOutcome.__eq__ - A
+    M 31:4 ExerciseOutcome.__init__ - A
+    M 38:4 ExerciseOutcome.correct - A
+    M 42:4 ExerciseOutcome.wrong - A
+    M 45:4 ExerciseOutcome.too_easy - A
+    M 62:4 ExerciseOutcome.find - A
+../api/zeeguu/core/model/sorted_exercise_log.py
+    M 56:4 SortedExerciseLog.most_recent_corrects - A
+    C 4:0 SortedExerciseLog - A
+    M 13:4 SortedExerciseLog.summary - A
+    M 18:4 SortedExerciseLog.compact_sorted_exercise_log - A
+    M 26:4 SortedExerciseLog.str_most_recent_correct_dates - A
+    M 41:4 SortedExerciseLog.latest_exercise_outcome - A
+    M 67:4 SortedExerciseLog.most_recent_correct_dates - A
+    M 6:4 SortedExerciseLog.__init__ - A
+    M 35:4 SortedExerciseLog.is_empty - A
+    M 38:4 SortedExerciseLog.last_exercise - A
+    M 48:4 SortedExerciseLog.last_exercise_time - A
+../api/zeeguu/core/model/cohort_article_map.py
+    C 10:0 CohortArticleMap - A
+    M 34:4 CohortArticleMap.get_articles_info_for_cohort - A
+    M 48:4 CohortArticleMap.get_cohorts_for_article - A
+    M 56:4 CohortArticleMap.delete_all_for_article - A
+    M 62:4 CohortArticleMap.delete_all_for_cohort - A
+    M 24:4 CohortArticleMap.__init__ - A
+    M 30:4 CohortArticleMap.find - A
+../api/zeeguu/core/model/session.py
+    M 42:4 Session.find - A
+    C 15:0 Session - A
+    M 34:4 Session.for_user - A
+    M 65:4 Session.find_for_id - A
+    M 80:4 Session.find_for_user - A
+    M 25:4 Session.__init__ - A
+    M 30:4 Session.update_use_date - A
+../api/zeeguu/core/model/search_filter.py
+    C 12:0 SearchFilter - A
+    M 47:4 SearchFilter.find_or_create - A
+    M 65:4 SearchFilter.with_search - A
+    M 37:4 SearchFilter.__init__ - A
+    M 41:4 SearchFilter.__str__ - A
+    M 57:4 SearchFilter.all_for_user - A
+    M 61:4 SearchFilter.with_search_id - A
+../api/zeeguu/core/model/feed.py
+    M 117:4 Feed.feed_items - B
+    M 237:4 Feed.get_articles - A
+    C 18:0 Feed - A
+    M 68:4 Feed.__str__ - A
+    M 79:4 Feed.from_url - A
+    M 95:4 Feed.initializeFeedHandler - A
+    M 101:4 Feed.as_dictionary - A
+    M 159:4 Feed.exists - A
+    M 166:4 Feed.feed_health_info - A
+    M 175:4 Feed.find_by_id - A
+    M 189:4 Feed.find_by_url - A
+    M 197:4 Feed.find_or_create - A
+    M 46:4 Feed.__init__ - A
+    M 75:4 Feed.__repr__ - A
+    M 233:4 Feed.find_for_language_id - A
+../api/zeeguu/core/model/user_preference.py
+    M 132:4 UserPreference.find_or_create - A
+    C 15:0 UserPreference - A
+    M 95:4 UserPreference.find - A
+    M 105:4 UserPreference.get - A
+    M 44:4 UserPreference.__init__ - A
+    M 49:4 UserPreference.set - A
+    M 52:4 UserPreference.get - A
+    M 55:4 UserPreference.__str__ - A
+    M 64:4 UserPreference.get_difficulty_estimator - A
+    M 68:4 UserPreference.set_difficulty_estimator - A
+    M 72:4 UserPreference.get_productive_exercises_setting - A
+    M 79:4 UserPreference.is_productive_exercises_preference_enabled - A
+    M 86:4 UserPreference._find - A
+    M 90:4 UserPreference.all_for_user - A
+    M 115:4 UserPreference.set - A
+../api/zeeguu/core/model/user_activitiy_data.py
+    M 177:4 UserActivityData.find - B
+    M 221:4 UserActivityData.find_url_in_extra_data - B
+    M 132:4 UserActivityData.find_or_create - B
+    C 25:0 UserActivityData - A
+    M 251:4 UserActivityData._find_article_in_value_or_extra_data - A
+    M 112:4 UserActivityData._filter_by_extra_value - A
+    M 295:4 UserActivityData.create_from_post_data - A
+    M 73:4 UserActivityData.data_as_dictionary - A
+    M 274:4 UserActivityData.get_article_id - A
+    M 55:4 UserActivityData.__init__ - A
+    M 85:4 UserActivityData.is_like - A
+    M 88:4 UserActivityData.is_feedback - A
+    M 91:4 UserActivityData._extra_data_filter - A
+../api/zeeguu/core/model/user_reading_session.py
+    M 145:4 UserReadingSession.find_by_article - A
+    C 17:0 UserReadingSession - A
+    M 40:4 UserReadingSession.__init__ - A
+    M 96:4 UserReadingSession.find_by_user - A
+    M 122:4 UserReadingSession.find_by_cohort - A
+    M 54:4 UserReadingSession.human_readable_duration - A
+    M 57:4 UserReadingSession.human_readable_date - A
+    M 60:4 UserReadingSession.events_in_this_session - A
+    M 70:4 UserReadingSession.get_reading_session_timeout - A
+    M 74:4 UserReadingSession.find_by_id - A
+    M 78:4 UserReadingSession._create_new_session - A
+    M 174:4 UserReadingSession.find_by_user_and_article - A
+    M 188:4 UserReadingSession.json_serializable_dict - A
+../api/zeeguu/core/model/bookmark.py
+    M 188:4 Bookmark.json_serializable_dict - C
+    M 116:4 Bookmark.should_be_studied - A
+    M 260:4 Bookmark.find_or_create - A
+    C 40:0 Bookmark - A
+    M 122:4 Bookmark.update_fit_for_study - A
+    M 346:4 Bookmark.exists - A
+    M 353:4 Bookmark.update_learned_status - A
+    M 75:4 Bookmark.__init__ - A
+    M 94:4 Bookmark.__repr__ - A
+    M 103:4 Bookmark.serializable_dictionary - A
+    M 110:4 Bookmark.add_new_exercise - A
+    M 113:4 Bookmark.translations_rendered_as_text - A
+    M 119:4 Bookmark.content_is_not_too_long - A
+    M 138:4 Bookmark.add_new_exercise_result - A
+    M 160:4 Bookmark.report_exercise_outcome - A
+    M 309:4 Bookmark.sorted_exercise_log - A
+    M 313:4 Bookmark.find_by_specific_user - A
+    M 317:4 Bookmark.find_all - A
+    M 321:4 Bookmark.find_all_for_text_and_user - A
+    M 325:4 Bookmark.find_all_for_user_and_article - A
+    M 334:4 Bookmark.find - A
+    M 338:4 Bookmark.find_all_by_user_and_word - A
+    M 342:4 Bookmark.find_by_user_word_and_text - A
+../api/zeeguu/core/model/search_subscription.py
+    C 11:0 SearchSubscription - A
+    M 46:4 SearchSubscription.find_or_create - A
+    M 64:4 SearchSubscription.with_search - A
+    M 36:4 SearchSubscription.__init__ - A
+    M 40:4 SearchSubscription.__str__ - A
+    M 56:4 SearchSubscription.all_for_user - A
+    M 60:4 SearchSubscription.with_search_id - A
+../api/zeeguu/core/model/url.py
+    M 89:4 Url.find_or_create - B
+    M 57:4 Url.render_link - A
+    C 18:0 Url - A
+    M 34:4 Url.__init__ - A
+    M 46:4 Url.title_if_available - A
+    M 43:4 Url.__str__ - A
+    M 51:4 Url.as_string - A
+    M 54:4 Url.as_canonical_string - A
+    M 67:4 Url.domain_name - A
+    M 71:4 Url.get_domain - A
+    M 80:4 Url.get_path - A
+    M 132:4 Url.find - A
+    M 172:4 Url.extract_canonical_url - A
+../api/zeeguu/core/model/user_word.py
+    M 74:4 UserWord.find_or_create - A
+    C 12:0 UserWord - A
+    M 31:4 UserWord.__init__ - A
+    M 46:4 UserWord.__eq__ - A
+    M 102:4 UserWord.exists - A
+    M 43:4 UserWord.__repr__ - A
+    M 49:4 UserWord.importance_level - A
+    M 63:4 UserWord.importance_level_string - A
+    M 68:4 UserWord.find - A
+    M 98:4 UserWord.find_all - A
+../api/zeeguu/core/model/exercise.py
+    C 10:0 Exercise - A
+    M 46:4 Exercise.find - A
+    M 68:4 Exercise.get_user_id - A
+    M 28:4 Exercise.__init__ - A
+    M 36:4 Exercise.short_string_summary - A
+    M 39:4 Exercise.__str__ - A
+    M 42:4 Exercise.__repr__ - A
+    M 85:4 Exercise.get_bookmark - A
+    M 95:4 Exercise.is_too_easy - A
+    M 98:4 Exercise.is_correct - A
+../api/zeeguu/core/model/learning_cycle.py
+    C 1:0 LearningCycle - A
+../api/zeeguu/core/model/text.py
+    M 110:4 Text.find_or_create - B
+    M 61:4 Text.shorten_word_context - B
+    C 16:0 Text - A
+    M 47:4 Text.url - A
+    M 57:4 Text.words - A
+    M 33:4 Text.__init__ - A
+    M 40:4 Text.__repr__ - A
+    M 43:4 Text.update_content - A
+    M 91:4 Text.all_bookmarks - A
+    M 97:4 Text.find_all - A
+../api/zeeguu/core/model/language.py
+    M 166:4 Language.get_articles - A
+    M 192:4 Language._get_articles - A
+    M 143:4 Language.find_or_create - A
+    C 11:0 Language - A
+    M 104:4 Language.__eq__ - A
+    M 124:4 Language.native_languages - A
+    M 131:4 Language.available_languages - A
+    M 97:4 Language.__init__ - A
+    M 101:4 Language.__repr__ - A
+    M 107:4 Language.as_dictionary - A
+    M 116:4 Language.default_learned - A
+    M 120:4 Language.default_native_language - A
+    M 138:4 Language.find - A
+    M 159:4 Language.all - A
+    M 163:4 Language.find_by_id - A
+    M 231:4 Language.all_reading_for_user - A
+../api/zeeguu/core/model/topic.py
+    M 38:4 Topic.all_articles - A
+    C 10:0 Topic - A
+    M 67:4 Topic.find - A
+    M 77:4 Topic.find_by_id - A
+    M 25:4 Topic.__init__ - A
+    M 28:4 Topic.__repr__ - A
+    M 31:4 Topic.as_dictionary - A
+    M 63:4 Topic.clear_all_articles_cache - A
+    M 88:4 Topic.get_all_topics - A
+../api/zeeguu/core/model/user_exercise_session.py
+    C 13:0 UserExerciseSession - A
+    M 34:4 UserExerciseSession.__init__ - A
+    M 49:4 UserExerciseSession.exercises_in_session_string - A
+    M 61:4 UserExerciseSession.find_by_user_id - A
+    M 84:4 UserExerciseSession.find_by_id - A
+    M 90:4 UserExerciseSession.find_by_cohort - A
+../api/zeeguu/core/model/search.py
+    C 7:0 Search - A
+    M 50:4 Search.find - A
+    M 60:4 Search.find_by_id - A
+    M 24:4 Search.__init__ - A
+    M 27:4 Search.__repr__ - A
+    M 30:4 Search.as_dictionary - A
+    M 37:4 Search.all_articles - A
+    M 43:4 Search.find_or_create - A
+../api/zeeguu/core/model/topic_subscription.py
+    C 13:0 TopicSubscription - A
+    M 46:4 TopicSubscription.find_or_create - A
+    M 60:4 TopicSubscription.all_for_user_as_list - A
+    M 36:4 TopicSubscription.__init__ - A
+    M 40:4 TopicSubscription.__str__ - A
+    M 56:4 TopicSubscription.all_for_user - A
+    M 64:4 TopicSubscription.with_id - A
+    M 68:4 TopicSubscription.with_topic_id - A
+../api/zeeguu/core/model/exercise_source.py
+    C 8:0 ExerciseSource - A
+    M 28:4 ExerciseSource.find_or_create - A
+    M 20:4 ExerciseSource.__eq__ - A
+    M 17:4 ExerciseSource.__init__ - A
+    M 24:4 ExerciseSource.find - A
+../api/zeeguu/core/model/domain_name.py
+    M 54:4 DomainName.find_or_create - B
+    C 14:0 DomainName - A
+    M 41:4 DomainName.for_url_string - A
+    M 21:4 DomainName.__init__ - A
+    M 24:4 DomainName.extract_domain_name - A
+    M 32:4 DomainName.get_domain - A
+    M 50:4 DomainName.find - A
+../api/zeeguu/core/model/topic_filter.py
+    C 13:0 TopicFilter - A
+    M 46:4 TopicFilter.find_or_create - A
+    M 60:4 TopicFilter.all_for_user_as_list - A
+    M 36:4 TopicFilter.__init__ - A
+    M 40:4 TopicFilter.__str__ - A
+    M 56:4 TopicFilter.all_for_user - A
+    M 64:4 TopicFilter.with_id - A
+    M 68:4 TopicFilter.with_topic_id - A
+../api/zeeguu/core/model/unique_code.py
+    C 10:0 UniqueCode - A
+    M 18:4 UniqueCode.__init__ - A
+    M 23:4 UniqueCode.__str__ - A
+    M 27:4 UniqueCode.last_code - A
+    M 33:4 UniqueCode.all_codes_for - A
+../api/zeeguu/core/model/localized_topic.py
+    M 52:4 LocalizedTopic.matches_article - A
+    C 10:0 LocalizedTopic - A
+    M 37:4 LocalizedTopic.__init__ - A
+    M 49:4 LocalizedTopic.__repr__ - A
+    M 63:4 LocalizedTopic.all_articles - A
+    M 69:4 LocalizedTopic.all_for_language - A
+../api/zeeguu/core/model/article.py
+    M 188:4 Article.article_info - B
+    M 358:4 Article.find_or_create - B
+    C 47:0 Article - A
+    M 163:4 Article.contains_any_of - A
+    M 169:4 Article.convertHTML2TextIfNeeded - A
+    M 98:4 Article.__init__ - A
+    M 157:4 Article.topics_as_string - A
+    M 280:4 Article.update_content - A
+    M 301:4 Article.own_texts_for_user - A
+    M 454:4 Article.find - A
+    M 471:4 Article.all_older_than - A
+    M 483:4 Article.all_younger_than - A
+    M 495:4 Article.exists - A
+    M 139:4 Article.compute_fk_and_wordcount - A
+    M 150:4 Article.__repr__ - A
+    M 153:4 Article.vote_broken - A
+    M 176:4 Article.update - A
+    M 245:4 Article.article_info_for_teacher - A
+    M 253:4 Article.is_owned_by - A
+    M 256:4 Article.add_topic - A
+    M 259:4 Article.add_search - A
+    M 262:4 Article.remove_search - A
+    M 266:4 Article.star_for_user - A
+    M 273:4 Article.mark_as_low_quality_and_remove_from_index - A
+    M 314:4 Article.create_clone - A
+    M 335:4 Article.create_from_upload - A
+    M 446:4 Article.find_by_id - A
+    M 450:4 Article.uploaded_by - A
+    M 503:4 Article.with_title_containing - A
+../api/zeeguu/core/content_cleaning/unicode_normalization.py
+    F 17:0 flatten_composed_unicode_characters - A
+../api/zeeguu/core/content_cleaning/content_cleaner.py
+    F 42:0 cleanup_non_content_bits - B
+    F 63:0 cleanup_all_articles_in_language - A
+../api/zeeguu/core/content_cleaning/__init__.py
+    F 7:0 cleanup_text - A
+../api/zeeguu/core/crowd_translations/__init__.py
+    F 4:0 get_own_past_translation - A
+../api/zeeguu/core/nlp_pipeline/spacy_wrapper.py
+    M 50:4 SpacyWrapper.__init__ - B
+    C 43:0 SpacyWrapper - A
+    M 77:4 SpacyWrapper.tokenize_sentence - A
+    M 84:4 SpacyWrapper.get_sent_list - A
+    M 81:4 SpacyWrapper.get_doc - A
+    M 88:4 SpacyWrapper.get_sent_similarity - A
+../api/zeeguu/core/nlp_pipeline/alignment_errant.py
+    M 31:4 ERRANT_Alignment.align - C
+    C 13:0 ERRANT_Alignment - B
+    M 93:4 ERRANT_Alignment.get_sub_cost - B
+    M 175:4 ERRANT_Alignment.__str__ - B
+    M 110:4 ERRANT_Alignment.get_cheapest_align_seq - A
+    M 151:4 ERRANT_Alignment.get_all_merge_edits - A
+    M 143:4 ERRANT_Alignment.get_all_split_edits - A
+    M 161:4 ERRANT_Alignment.get_all_equal_edits - A
+    M 170:4 ERRANT_Alignment.merge_edits - A
+    M 20:4 ERRANT_Alignment.__init__ - A
+../api/zeeguu/core/nlp_pipeline/edit_errant.py
+    M 23:4 Edit.minimise - B
+    C 2:0 Edit - A
+    M 8:4 Edit.__init__ - A
+    M 46:4 Edit.to_m2 - A
+    M 52:4 Edit.__str__ - A
+../api/zeeguu/core/nlp_pipeline/confusion_generator.py
+    M 70:4 NoiseGenerator._conf_generate_confusion_words - D
+    M 147:4 NoiseGenerator.replace_sent_with_noise - B
+    C 21:0 NoiseGenerator - B
+    M 37:4 NoiseGenerator._select_words_based_on_sim - A
+    M 55:4 NoiseGenerator._get_random_word - A
+    M 22:4 NoiseGenerator.__init__ - A
+    M 51:4 NoiseGenerator._compare_string - A
+    M 144:4 NoiseGenerator.generate_confusion_words - A
+../api/zeeguu/core/nlp_pipeline/automatic_gec_tagging.py
+    M 319:4 AutoGECTagging.anottate_clues - F
+    M 220:4 AutoGECTagging.generate_labels - E
+    M 157:4 AutoGECTagging._merge_missing - D
+    C 133:0 AutoGECTagging - D
+    M 139:4 AutoGECTagging.word_lemma_token_sim - A
+    M 134:4 AutoGECTagging.__init__ - A
+../api/zeeguu/core/nlp_pipeline/reduce_context.py
+    C 5:0 ContextReducer - A
+    M 7:4 ContextReducer.get_similar_sentences - A
+    M 28:4 ContextReducer.reduce_context_for_bookmark - A
+../api/zeeguu/core/bookmark_quality/fit_for_study.py
+    F 6:0 fit_for_study - A
+    F 20:0 feedback_prevents_further_study - A
+../api/zeeguu/core/bookmark_quality/negative_qualities.py
+    F 1:0 bad_quality_bookmark - B
+    F 40:0 origin_is_subsumed_in_other_bookmark - A
+    F 13:0 split_words_from_context - A
+    F 55:0 origin_same_as_translation - A
+    F 63:0 translation_already_in_context_bug - A
+    F 25:0 context_is_too_long - A
+    F 31:0 origin_is_a_very_short_word - A
+    F 35:0 origin_has_too_many_words - A
+../api/zeeguu/core/bookmark_quality/top_bookmarks_for_user.py
+    F 6:0 top_bookmarks - A
+../api/zeeguu/core/bookmark_quality/positive_qualities.py
+    F 8:0 quality_top_bookmark - A
+    F 4:0 quality_bookmark - A
+../api/zeeguu/core/reading_analysis/macro_reading_session.py
+    F 61:0 macro_sessions_for_user - B
+    M 38:4 MacroSession.print_details - A
+    C 18:0 MacroSession - A
+    M 19:4 MacroSession.__init__ - A
+    M 27:4 MacroSession.append - A
+    M 32:4 MacroSession.start_date - A
+    M 35:4 MacroSession.year - A
+    M 55:4 MacroSession.print_summary - A
+../api/zeeguu/core/ml_models/utils.py
+    F 11:0 stem_pre_process - A
+    F 5:0 remove_non_alphanumeric - A
+../api/zeeguu/core/ml_models/paywall_detector.py
+    F 10:0 is_paywalled - A
+../api/zeeguu/core/emailer/password_reset.py
+    F 4:0 send_password_reset_email - A
+../api/zeeguu/core/emailer/zeeguu_mailer.py
+    M 24:4 ZeeguuMailer.send - A
+    C 8:0 ZeeguuMailer - A
+    M 65:4 ZeeguuMailer.notify_audio_experiment - A
+    M 96:4 ZeeguuMailer.send_content_retrieved_notification - A
+    M 9:4 ZeeguuMailer.__init__ - A
+    M 20:4 ZeeguuMailer.send_with_yagmail - A
+    M 38:4 ZeeguuMailer._content_of_email - A
+    M 49:4 ZeeguuMailer.send_feedback - A
+    M 86:4 ZeeguuMailer.send_mail - A
+../api/zeeguu/core/emailer/user_activity.py
+    F 8:0 send_new_user_account_email - A
+    F 15:0 send_user_finished_exercise_session - A
+    F 27:0 send_notification_article_feedback - A
+../api/zeeguu/core/definition_of_learned/is_learned.py
+    F 4:0 is_learned_based_on_exercise_outcomes - A
+../api/zeeguu/core/feed_handler/rssfeed.py
+    C 8:0 RSSFeed - A
+    M 13:4 RSSFeed.extract_feed_metadata - A
+    M 34:4 RSSFeed.get_feed_articles - A
+    M 9:4 RSSFeed.__init__ - A
+../api/zeeguu/core/feed_handler/newspaperfeed.py
+    C 7:0 NewspaperFeed - A
+    M 26:4 NewspaperFeed.get_feed_articles - A
+    M 8:4 NewspaperFeed.__init__ - A
+    M 19:4 NewspaperFeed.extract_feed_metadata - A
+../api/zeeguu/core/feed_handler/feed_handler.py
+    C 5:0 FeedHandler - A
+    M 13:4 FeedHandler.get_server_time - A
+    M 6:4 FeedHandler.__init__ - A
+    M 18:4 FeedHandler.extract_feed_metadata - A
+    M 25:4 FeedHandler.get_feed_articles - A
+../api/zeeguu/core/sql/query_building.py
+    F 14:0 list_of_dicts_from_query - A
+    F 6:0 date_format - A
+    F 10:0 datetime_format - A
+../api/zeeguu/core/sql/queries/query_loader.py
+    F 6:0 load_query - A
+../api/zeeguu/core/sql/learner/exercises_history.py
+    F 76:0 exercises_grouped_by_word - A
+    F 4:0 exercises_in_session - A
+    F 36:0 exercise_history - A
+../api/zeeguu/core/sql/learner/words.py
+    F 49:0 learned_words - A
+    F 5:0 words_not_studied - A
+../api/zeeguu/core/sql/teacher/teachers_for_cohort.py
+    F 4:0 teachers_for_cohort - A
+../api/zeeguu/config/loader.py
+    F 41:0 _assert_configs - A
+    F 6:0 load_configuration_or_abort - A
+    F 70:0 _load_config_file - A
+    F 53:0 _called_from_within_a_test - A
+    F 58:0 _load_core_testing_configuration - A
+    F 64:0 _load_api_testing_configuration - A
+../api/zeeguu/api/cross_domain_app.py
+    C 4:0 CrossDomainApp - A
+    M 7:4 CrossDomainApp.handle_user_exception - A
+../api/zeeguu/api/custom_fmd_graphs.py
+    F 1:0 daily_visitors - A
+../api/zeeguu/api/app.py
+    F 32:0 create_app - A
+../api/zeeguu/api/endpoints/user_articles.py
+    F 19:0 user_articles_recommended - A
+    F 40:0 saved_articles - A
+    F 55:0 user_articles_topic_filtered - A
+    F 80:0 user_articles_starred_and_liked - A
+    F 91:0 user_articles_cohort - A
+../api/zeeguu/api/endpoints/user.py
+    F 109:0 user_settings - B
+    F 16:0 learned_language - A
+    F 43:0 learned_language_set - A
+    F 59:0 native_language - A
+    F 66:0 native_language_set - A
+    F 79:0 learned_and_native_language - A
+    F 93:0 get_user_details - A
+    F 160:0 send_feedback - A
+../api/zeeguu/api/endpoints/user_preferences.py
+    F 26:0 save_user_preferences - A
+    F 14:0 user_preferences - A
+../api/zeeguu/api/endpoints/exercise_sessions.py
+    F 21:0 exercise_session_start - A
+    F 33:0 exercise_session_update - A
+    F 43:0 exercise_session_end - A
+    F 54:0 exercise_session_info - A
+../api/zeeguu/api/endpoints/sessions.py
+    F 12:0 get_session - A
+    F 41:0 get_anon_session - A
+    F 93:0 logout - A
+    F 66:0 validate - A
+    F 80:0 is_up - A
+../api/zeeguu/api/endpoints/own_texts.py
+    F 34:0 own_texts - A
+    F 51:0 delete_own_text - A
+    F 16:0 upload_own_text - A
+    F 69:0 update_own_text - A
+../api/zeeguu/api/endpoints/reading_sessions.py
+    F 16:0 reading_session_start - A
+    F 29:0 reading_session_update - A
+    F 39:0 reading_session_end - A
+    F 49:0 reading_session_info - A
+../api/zeeguu/api/endpoints/accounts.py
+    F 141:0 reset_password - A
+    F 88:0 add_anon_user - A
+    F 18:0 add_user - A
+    F 60:0 add_basic_user - A
+    F 117:0 send_code - A
+    F 175:0 delete_all_codes_for_email - A
+    F 163:0 bad_request - A
+    F 167:0 submitted_code_is_wrong - A
+    F 171:0 password_is_too_short - A
+../api/zeeguu/api/endpoints/user_article.py
+    F 106:0 user_article_update - A
+    F 20:0 user_article - A
+    F 59:0 post_article_difficulty_feedback - A
+    F 82:0 article_opened - A
+    F 142:0 parse_html - A
+    F 164:0 parse_url - A
+../api/zeeguu/api/endpoints/feature_toggles.py
+    F 55:0 _merle_exercises - A
+    F 47:0 _tiago_exercises - A
+    F 74:0 _extension_experiment_1 - A
+    F 10:0 is_feature_enabled - A
+    F 29:0 features_for_user - A
+    F 66:0 _no_audio_exercises - A
+    F 70:0 _audio_exercises - A
+    F 37:0 _feature_map - A
+../api/zeeguu/api/endpoints/nlp.py
+    F 16:0 do_some_spacy - A
+    F 33:0 create_confusion_words - A
+    F 50:0 annotate_clues - A
+    F 68:0 get_shorter_similar_sents_in_article - A
+    F 88:0 get_smaller_context - A
+../api/zeeguu/api/endpoints/topics.py
+    F 110:0 get_available_topics - B
+    F 217:0 cache_articles - A
+    F 81:0 get_subscribed_topics - A
+    F 192:0 get_subscribed_filters - A
+    F 54:0 unsubscribe_from_topic - A
+    F 166:0 unsubscribe_from_filter - A
+    F 33:0 subscribe_to_topic_with_id - A
+    F 145:0 subscribe_to_filter_with_id - A
+../api/zeeguu/api/endpoints/user_statistics.py
+    F 12:0 bookmark_counts_by_date - A
+    F 22:0 activity_by_day - A
+../api/zeeguu/api/endpoints/translation.py
+    F 109:0 get_multiple_translations - A
+    F 208:0 contribute_translation - A
+    F 29:0 get_one_translation - A
+    F 168:0 update_translation - A
+    F 285:0 basic_translate - A
+../api/zeeguu/api/endpoints/user_languages.py
+    F 26:0 modify_user_language - B
+    F 140:0 get_interesting_reading_languages - A
+    F 69:0 delete_user_language - A
+    F 96:0 get_user_languages - A
+    F 118:0 get_reading_languages - A
+../api/zeeguu/api/endpoints/system_languages.py
+    F 10:0 system_languages - A
+    F 23:0 available_languages - A
+    F 38:0 available_native_languages - A
+    F 51:0 ping - A
+../api/zeeguu/api/endpoints/search.py
+    F 86:0 get_subscribed_searches - A
+    F 164:0 get_filtered_searches - A
+    F 55:0 unsubscribe_from_search - A
+    F 134:0 unfilter_search - A
+    F 194:0 search_for_search_terms - A
+    F 33:0 subscribe_to_search - A
+    F 116:0 filter_search - A
+../api/zeeguu/api/endpoints/student.py
+    F 16:0 join_cohort_api - A
+    F 40:0 student_info - A
+    F 53:0 cohort_name - A
+../api/zeeguu/api/endpoints/speech.py
+    F 60:0 mp3_of_full_article - A
+    F 32:0 tts - A
+    F 23:0 voice_for_language - A
+    F 132:0 _code_from_id - A
+    F 87:0 _save_speech_to_file - A
+    F 118:0 _file_name_for_user_word - A
+    F 123:0 _file_name_for_full_article - A
+../api/zeeguu/api/endpoints/activity_tracking.py
+    F 15:0 upload_user_activity_data - A
+../api/zeeguu/api/endpoints/exercises.py
+    F 110:0 report_exercise_outcome - A
+    F 16:0 bookmarks_to_study - A
+    F 33:0 bookmarks_in_pipeline - A
+    F 60:0 new_bookmarks_to_study - A
+    F 86:0 get_exercise_log_for_bookmark - A
+    F 48:0 has_bookmarks_in_pipeline_to_review - A
+    F 74:0 get_total_bookmarks_in_pipeline - A
+    F 148:0 similar_words_api - A
+../api/zeeguu/api/endpoints/bookmarks_and_words.py
+    F 27:0 top_bookmarks_route - A
+    F 39:0 learned_bookmarks - A
+    F 51:0 starred_bookmarks - A
+    F 169:0 delete_bookmark - A
+    F 17:0 studied_words - A
+    F 63:0 get_bookmarks_by_day - A
+    F 78:0 post_bookmarks_by_day - A
+    F 105:0 bookmarks_for_article - A
+    F 133:0 bookmarks_to_study_for_article - A
+    F 148:0 bookmarks_for_article_2 - A
+    F 183:0 report_learned_bookmark - A
+    F 198:0 star_bookmark - A
+    F 209:0 unstar_bookmark - A
+../api/zeeguu/api/endpoints/article.py
+    F 20:0 find_or_create_article - A
+    F 59:0 make_personal_copy - A
+    F 75:0 remove_personal_copy - A
+    F 93:0 is_article_language_supported - A
+../api/zeeguu/api/endpoints/teacher_dashboard/cohorts.py
+    F 73:0 create_own_cohort - C
+    F 36:0 remove_cohort - A
+    F 133:0 update_cohort - A
+    F 167:0 users_from_cohort - A
+    F 191:0 cohorts_info - A
+    F 221:0 add_colleague_to_cohort - A
+    F 208:0 wrapper_to_json_class - A
+    F 244:0 remove_user_from_cohort - A
+../api/zeeguu/api/endpoints/teacher_dashboard/student_readings.py
+    F 12:0 student_reading_sessions - A
+../api/zeeguu/api/endpoints/teacher_dashboard/student_overviews.py
+    F 13:0 api_student_activity_overview - A
+../api/zeeguu/api/endpoints/teacher_dashboard/_common_api_parameters.py
+    F 11:0 _convert_number_of_days_to_date_interval - A
+    F 25:0 _get_student_cohort_and_period_from_POST_params - A
+../api/zeeguu/api/endpoints/teacher_dashboard/article_management.py
+    F 85:0 upload_articles - A
+    F 169:0 remove_article_from_cohort - A
+    F 27:0 send_article_to_colleague - A
+    F 62:0 add_article_to_cohort - A
+    F 145:0 delete_article_from_cohort - A
+    F 207:0 teacher_texts - A
+    F 132:0 get_cohorts_for_article - A
+    F 193:0 cohort_files - A
+../api/zeeguu/api/endpoints/teacher_dashboard/_permissions.py
+    F 32:0 check_permission_for_user - A
+    F 7:0 has_permission_for_cohort - A
+    F 21:0 check_permission_for_cohort - A
+    F 46:0 is_teacher - A
+    F 26:0 _abort_if_no_permission_for_user - A
+../api/zeeguu/api/endpoints/teacher_dashboard/student_exercises.py
+    F 15:0 student_exercise_correctness - A
+    F 34:0 api_student_exercise_history - A
+../api/zeeguu/api/endpoints/teacher_dashboard/student.py
+    F 28:0 basic_user_info - A
+    F 38:0 user_info_api - A
+    F 48:0 cohort_member_bookmarks - A
+    F 67:0 cohort_member_bookmarks_deprecated - A
+    F 88:0 deprecated_user_info_api - A
+../api/zeeguu/api/endpoints/teacher_dashboard/helpers.py
+    F 46:0 get_cohort_info - A
+    F 31:0 all_user_info_from_cohort - A
+    F 16:0 student_info_for_teacher_dashboard - A
+../api/zeeguu/api/endpoints/teacher_dashboard/_only_teachers_decorator.py
+    F 7:0 only_teachers - A
+../api/zeeguu/api/endpoints/teacher_dashboard/student_words.py
+    F 12:0 student_words_not_studied - A
+    F 20:0 student_learned_words - A
+../api/zeeguu/api/endpoints/teacher_dashboard/general.py
+    F 35:0 has_permission_for_cohort_api - A
+    F 55:0 users_by_teacher - A
+    F 74:0 inv_code_usable - A
+    F 28:0 is_teacher_api - A
+    F 45:0 has_permission_for_user_info - A
+../api/zeeguu/api/endpoints/helpers/activity_sessions.py
+    F 9:0 update_activity_session - A
+../api/zeeguu/api/test/test_user_data.py
+    F 4:0 test_set_learned_language - A
+../api/zeeguu/api/test/test_reading_session.py
+    F 4:0 test_start_new_reading_session - A
+    F 11:0 test_update_reading_session - A
+    F 20:0 test_end_reading_session - A
+../api/zeeguu/api/test/test_endpoint_names.py
+    F 4:0 test_routes_do_not_end_with_slash - B
+../api/zeeguu/api/test/test_account_creation.py
+    F 17:0 test_cant_add_same_email_twice - A
+    F 58:0 test_reset_password_can_use_new_password - A
+    F 76:0 test_reset_password_returns_400_invalid_code - A
+    F 10:0 test_add_user - A
+    F 28:0 test_create_user_returns_400_if_password_too_short - A
+    F 34:0 test_create_user_returns_400_if_password_absent - A
+    F 40:0 test_create_user_returns_400_if_password_not_given - A
+    F 46:0 test_reset_password - A
+    F 94:0 _create_test_user - A
+../api/zeeguu/api/test/test_bookmarks.py
+    F 5:0 test_create_and_delete_bookmark - A
+../api/zeeguu/api/test/test_user_article.py
+    F 15:0 test_article_update - B
+    F 5:0 test_article_info - A
+    F 45:0 _create_new_article - A
+../api/zeeguu/api/test/test_exercise_session.py
+    F 15:0 test_add_exercise_to_session - A
+    F 8:0 test_start_new_exercise_session - A
+../api/zeeguu/api/test/test_bookmark.py
+    F 76:0 test_context_parameter_functions_in_bookmarks_by_day - A
+    F 94:0 test_get_known_bookmarks_after_date - A
+    F 43:0 test_update_bookmark - A
+    F 4:0 test_delete - A
+    F 12:0 test_last_bookmark_added_is_first_in_bookmarks_by_day - A
+    F 20:0 test_contribute_own_translation - A
+    F 69:0 test_top_bookmarks - A
+    F 117:0 _get_bookmarks_by_day - A
+    F 124:0 _first_bookmark_on_day1 - A
+    F 129:0 _bookmarks_on_day1 - A
+../api/zeeguu/api/test/test_teacher_dashboard.py
+    F 21:0 test_add_student - A
+    F 39:0 test_remove_cohort - A
+    F 4:0 test_is_teacher - A
+    F 9:0 test_add_cohort - A
+    F 14:0 test_cohort_invite_code_already_in_use - A
+    F 33:0 test_get_class_info - A
+    F 49:0 test_update_cohort - A
+    F 65:0 test_student_does_not_have_access_to_cohort - A
+../api/zeeguu/api/test/test_article.py
+    F 5:0 test_create_article - A
+    F 13:0 test_starred_or_liked - A
+../api/zeeguu/api/test/fixtures.py
+    C 80:0 LoggedInClient - A
+    M 81:4 LoggedInClient.__init__ - A
+    M 94:4 LoggedInClient.append_session - A
+    M 99:4 LoggedInClient.get - A
+    M 118:4 LoggedInClient.post - A
+    C 126:0 LoggedInTeacher - A
+    F 12:0 client - A
+    F 27:0 test_app - A
+    F 41:0 logged_in_client - A
+    F 61:0 logged_in_teacher - A
+    F 142:0 add_one_bookmark - A
+    M 113:4 LoggedInClient.response_from_post - A
+    M 128:4 LoggedInTeacher.__init__ - A
+    M 132:4 LoggedInTeacher._upgrade_to_teacher - A
+../api/zeeguu/api/utils/feedparser_extensions.py
+    F 7:0 list_of_feeds_at_url - A
+    F 44:0 two_letter_language_code - A
+../api/zeeguu/api/utils/route_wrappers.py
+    F 8:0 with_session - A
+    F 42:0 cross_domain - A
+../api/zeeguu/api/utils/abort_handling.py
+    F 4:0 make_error - A
+../api/zeeguu/api/utils/translator.py
+    F 168:0 get_next_results - B
+    C 37:0 WordnikTranslate - A
+    C 56:0 GoogleTranslateWithContext - A
+    C 74:0 GoogleTranslateWithoutContext - A
+    C 94:0 MicrosoftTranslateWithContext - A
+    C 114:0 MicrosoftTranslateWithoutContext - A
+    F 157:0 get_all_translations - A
+    M 42:4 WordnikTranslate.get_result - A
+    M 60:4 GoogleTranslateWithContext.get_result - A
+    M 80:4 GoogleTranslateWithoutContext.get_result - A
+    M 100:4 MicrosoftTranslateWithContext.get_result - A
+    M 120:4 MicrosoftTranslateWithoutContext.get_result - A
+    F 222:0 contribute_trans - A
+    M 38:4 WordnikTranslate.__init__ - A
+    M 57:4 GoogleTranslateWithContext.__init__ - A
+    M 75:4 GoogleTranslateWithoutContext.__init__ - A
+    M 95:4 MicrosoftTranslateWithContext.__init__ - A
+    M 115:4 MicrosoftTranslateWithoutContext.__init__ - A
+../api/zeeguu/api/utils/json_result.py
+    C 8:0 DateTimeEncoder - A
+    M 9:4 DateTimeEncoder.default - A
+    F 21:0 json_result - A
+../api/zeeguu/logging/__init__.py
+    F 15:0 info - A
+    F 19:0 debug - A
+    F 23:0 log - A
+    F 27:0 warning - A
+    F 31:0 critical - A
+    F 35:0 logp - A
+
+1166 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.322469982847341)

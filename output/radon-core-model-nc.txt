@@ -1,0 +1,7 @@
+../api/zeeguu/core/model/user.py
+    M 663:4 User.levels_for - C
+../api/zeeguu/core/model/bookmark.py
+    M 188:4 Bookmark.json_serializable_dict - C
+
+2 blocks (classes, functions, methods) analyzed.
+Average complexity: C (12.0)

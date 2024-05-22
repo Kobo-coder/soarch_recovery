@@ -1,0 +1,373 @@
+api
+├── zeeguu
+│   ├── core
+│   │   ├── user_activity_hooks
+│   │   │   ├── article_interaction_hooks.py
+│   │   │   └── __init__.py
+│   │   ├── account_management
+│   │   │   ├── __init__.py
+│   │   │   └── user_account_creation.py
+│   │   ├── word_scheduling
+│   │   │   ├── basicSR
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── basicSR.py
+│   │   │   ├── __init__.py
+│   │   │   └── adaptive
+│   │   │       └── scheduling_algo.py
+│   │   ├── test
+│   │   │   ├── test_retrieve_and_compute.py
+│   │   │   ├── test_user.py
+│   │   │   ├── test_logging.py
+│   │   │   ├── testing_data.py
+│   │   │   ├── test_user_word.py
+│   │   │   ├── test_feed.py
+│   │   │   ├── test_data
+│   │   │   │   ├── cnn_kathmandu.html
+│   │   │   │   ├── propublica_investing.html
+│   │   │   │   ├── public_suffix_list.dat
+│   │   │   │   ├── jp_article_example.html
+│   │   │   │   ├── onion_us_military.html
+│   │   │   │   ├── faz_leichtathletik.html
+│   │   │   │   ├── verdensbedste_jorde.html
+│   │   │   │   ├── blinden_und_elefant.html
+│   │   │   │   ├── spiegel_venezuela.html
+│   │   │   │   ├── spiegel_nancy.html
+│   │   │   │   ├── verdensbedste_indonesien.html
+│   │   │   │   ├── lemonde_vols_americans.html
+│   │   │   │   ├── spiegel.rss
+│   │   │   │   ├── der_kleine_prinz.html
+│   │   │   │   ├── newscientist_fish.html
+│   │   │   │   ├── verdensbedste.html
+│   │   │   │   └── lemonde_formation.html
+│   │   │   ├── test_localized_topic.py
+│   │   │   ├── __init__.py
+│   │   │   ├── test_user_article.py
+│   │   │   ├── test_text.py
+│   │   │   ├── test_difficulty_estimator_factory.py
+│   │   │   ├── test_cohort.py
+│   │   │   ├── test_domain.py
+│   │   │   ├── rules
+│   │   │   │   ├── exercise_rule.py
+│   │   │   │   ├── exercise_session_rule.py
+│   │   │   │   ├── outcome_rule.py
+│   │   │   │   ├── cohort_rule.py
+│   │   │   │   ├── url_rule.py
+│   │   │   │   ├── user_article_rule.py
+│   │   │   │   ├── language_rule.py
+│   │   │   │   ├── user_exercise_session_rule.py
+│   │   │   │   ├── bookmark_rule.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── article_rule.py
+│   │   │   │   ├── feed_rule.py
+│   │   │   │   ├── source_rule.py
+│   │   │   │   ├── user_word_rule.py
+│   │   │   │   ├── user_reading_session_rule.py
+│   │   │   │   ├── text_rule.py
+│   │   │   │   ├── base_rule.py
+│   │   │   │   └── user_rule.py
+│   │   │   ├── tests_difficulty_estimator_strategies
+│   │   │   │   ├── test_default_difficulty_estimator.py
+│   │   │   │   ├── test_frequency_difficulty_estimator.py
+│   │   │   │   ├── test_flesch_kincaid_difficulty_estimator.py
+│   │   │   │   └── __init__.py
+│   │   │   ├── test_url.py
+│   │   │   ├── test_bookmark.py
+│   │   │   ├── mocking_the_web.py
+│   │   │   ├── test_article.py
+│   │   │   ├── test_user_preferences.py
+│   │   │   ├── test_language.py
+│   │   │   └── model_test_mixin.py
+│   │   ├── util
+│   │   │   ├── time.py
+│   │   │   ├── encoding.py
+│   │   │   ├── timer_logging_decorator.py
+│   │   │   ├── __init__.py
+│   │   │   ├── hash.py
+│   │   │   └── text.py
+│   │   ├── elastic
+│   │   │   ├── elastic_query_builder.py
+│   │   │   ├── __init__.py
+│   │   │   ├── settings.py
+│   │   │   └── indexing.py
+│   │   ├── word_stats
+│   │   │   └── __init__.py
+│   │   ├── diagrams
+│   │   │   └── reading_sessions.svg
+│   │   ├── constants.py
+│   │   ├── content_recommender
+│   │   │   ├── __init__.py
+│   │   │   └── elastic_recommender.py
+│   │   ├── content_quality
+│   │   │   ├── __init__.py
+│   │   │   └── quality_filter.py
+│   │   ├── __init__.py
+│   │   ├── content_retriever
+│   │   │   ├── parse_with_newspaper.py
+│   │   │   ├── crawler_exceptions.py
+│   │   │   ├── __init__.py
+│   │   │   ├── parse_with_readability_server.py
+│   │   │   ├── video_dowloader.py
+│   │   │   └── article_downloader.py
+│   │   ├── language
+│   │   │   ├── strategies
+│   │   │   │   ├── word_rank_difficulty_estimator.py
+│   │   │   │   ├── word_history_difficulty_estimator.py
+│   │   │   │   ├── cognacy_wh_difficulty_estimator.py
+│   │   │   │   ├── flesch_kincaid_difficulty_estimator.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── default_difficulty_estimator.py
+│   │   │   │   ├── frequency_difficulty_estimator.py
+│   │   │   │   └── cognacy_difficulty_estimator.py
+│   │   │   ├── __init__.py
+│   │   │   ├── difficulty_estimator_factory.py
+│   │   │   ├── difficulty_estimator_strategy.py
+│   │   │   └── services
+│   │   │       └── lingo_rank_service.py
+│   │   ├── exercises
+│   │   │   ├── __init__.py
+│   │   │   └── similar_words.py
+│   │   ├── user_statistics
+│   │   │   ├── exercise_corectness.py
+│   │   │   ├── exercise_sessions.py
+│   │   │   ├── student_overview.py
+│   │   │   ├── reading_sessions.py
+│   │   │   ├── activity.py
+│   │   │   └── __init__.py
+│   │   ├── model
+│   │   │   ├── starred_article.py
+│   │   │   ├── user.py
+│   │   │   ├── user_language.py
+│   │   │   ├── word_to_study.py
+│   │   │   ├── teacher.py
+│   │   │   ├── teacher_cohort_map.py
+│   │   │   ├── cohort.py
+│   │   │   ├── personal_copy.py
+│   │   │   ├── article_difficulty_feedback.py
+│   │   │   ├── difficulty_lingo_rank.py
+│   │   │   ├── user_article.py
+│   │   │   ├── exercise_outcome.py
+│   │   │   ├── sorted_exercise_log.py
+│   │   │   ├── cohort_article_map.py
+│   │   │   ├── session.py
+│   │   │   ├── __init__.py
+│   │   │   ├── search_filter.py
+│   │   │   ├── feed.py
+│   │   │   ├── user_preference.py
+│   │   │   ├── user_activitiy_data.py
+│   │   │   ├── user_reading_session.py
+│   │   │   ├── bookmark.py
+│   │   │   ├── search_subscription.py
+│   │   │   ├── url.py
+│   │   │   ├── user_word.py
+│   │   │   ├── exercise.py
+│   │   │   ├── learning_cycle.py
+│   │   │   ├── text.py
+│   │   │   ├── language.py
+│   │   │   ├── topic.py
+│   │   │   ├── user_exercise_session.py
+│   │   │   ├── search.py
+│   │   │   ├── topic_subscription.py
+│   │   │   ├── exercise_source.py
+│   │   │   ├── domain_name.py
+│   │   │   ├── topic_filter.py
+│   │   │   ├── unique_code.py
+│   │   │   ├── localized_topic.py
+│   │   │   └── article.py
+│   │   ├── content_cleaning
+│   │   │   ├── unicode_normalization.py
+│   │   │   ├── content_cleaner.py
+│   │   │   └── __init__.py
+│   │   ├── crowd_translations
+│   │   │   └── __init__.py
+│   │   ├── nlp_pipeline
+│   │   │   ├── spacy_wrapper.py
+│   │   │   ├── alignment_errant.py
+│   │   │   ├── edit_errant.py
+│   │   │   ├── confusion_generator.py
+│   │   │   ├── __init__.py
+│   │   │   ├── automatic_gec_tagging.py
+│   │   │   └── reduce_context.py
+│   │   ├── bookmark_quality
+│   │   │   ├── fit_for_study.py
+│   │   │   ├── __init__.py
+│   │   │   ├── negative_qualities.py
+│   │   │   ├── top_bookmarks_for_user.py
+│   │   │   └── positive_qualities.py
+│   │   ├── reading_analysis
+│   │   │   └── macro_reading_session.py
+│   │   ├── ml_models
+│   │   │   ├── __init__.py
+│   │   │   ├── utils.py
+│   │   │   ├── binary
+│   │   │   │   └── tfidf_multi_paywall_detect.joblib
+│   │   │   └── paywall_detector.py
+│   │   ├── emailer
+│   │   │   ├── password_reset.py
+│   │   │   ├── __init__.py
+│   │   │   ├── zeeguu_mailer.py
+│   │   │   └── user_activity.py
+│   │   ├── definition_of_learned
+│   │   │   ├── __init__.py
+│   │   │   └── is_learned.py
+│   │   ├── feed_handler
+│   │   │   ├── rssfeed.py
+│   │   │   ├── __init__.py
+│   │   │   ├── newspaperfeed.py
+│   │   │   └── feed_handler.py
+│   │   └── sql
+│   │       ├── queries
+│   │       │   └── query_loader.py
+│   │       ├── __init__.py
+│   │       ├── query_building.py
+│   │       ├── learner
+│   │       │   ├── exercises_history.py
+│   │       │   ├── __init__.py
+│   │       │   └── words.py
+│   │       └── teacher
+│   │           ├── __init__.py
+│   │           └── teachers_for_cohort.py
+│   ├── config
+│   │   ├── __init__.py
+│   │   └── loader.py
+│   ├── __init__.py
+│   ├── api
+│   │   ├── cross_domain_app.py
+│   │   ├── endpoints
+│   │   │   ├── user_articles.py
+│   │   │   ├── user.py
+│   │   │   ├── user_preferences.py
+│   │   │   ├── exercise_sessions.py
+│   │   │   ├── sessions.py
+│   │   │   ├── own_texts.py
+│   │   │   ├── reading_sessions.py
+│   │   │   ├── accounts.py
+│   │   │   ├── teacher_dashboard
+│   │   │   │   ├── cohorts.py
+│   │   │   │   ├── student_readings.py
+│   │   │   │   ├── student_overviews.py
+│   │   │   │   ├── _common_api_parameters.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── article_management.py
+│   │   │   │   ├── _permissions.py
+│   │   │   │   ├── student_exercises.py
+│   │   │   │   ├── student.py
+│   │   │   │   ├── helpers.py
+│   │   │   │   ├── _only_teachers_decorator.py
+│   │   │   │   ├── student_words.py
+│   │   │   │   └── general.py
+│   │   │   ├── user_article.py
+│   │   │   ├── feature_toggles.py
+│   │   │   ├── __init__.py
+│   │   │   ├── nlp.py
+│   │   │   ├── topics.py
+│   │   │   ├── user_statistics.py
+│   │   │   ├── translation.py
+│   │   │   ├── user_languages.py
+│   │   │   ├── system_languages.py
+│   │   │   ├── search.py
+│   │   │   ├── student.py
+│   │   │   ├── speech.py
+│   │   │   ├── activity_tracking.py
+│   │   │   ├── exercises.py
+│   │   │   ├── helpers
+│   │   │   │   ├── activity_sessions.py
+│   │   │   │   └── __init__.py
+│   │   │   ├── bookmarks_and_words.py
+│   │   │   └── article.py
+│   │   ├── test
+│   │   │   ├── test_user_data.py
+│   │   │   ├── test_reading_session.py
+│   │   │   ├── test_endpoint_names.py
+│   │   │   ├── test_account_creation.py
+│   │   │   ├── test_bookmarks.py
+│   │   │   ├── test_user_article.py
+│   │   │   ├── test_exercise_session.py
+│   │   │   ├── test_bookmark.py
+│   │   │   ├── test_teacher_dashboard.py
+│   │   │   ├── test_article.py
+│   │   │   └── fixtures.py
+│   │   ├── machine_specific.py.example
+│   │   ├── __init__.py
+│   │   ├── utils
+│   │   │   ├── feedparser_extensions.py
+│   │   │   ├── __init__.py
+│   │   │   ├── route_wrappers.py
+│   │   │   ├── abort_handling.py
+│   │   │   ├── translator.py
+│   │   │   └── json_result.py
+│   │   ├── custom_fmd_graphs.py
+│   │   └── app.py
+│   ├── cl
+│   │   └── __init__.py
+│   └── logging
+│       └── __init__.py
+├── .githooks
+│   ├── rules
+│   │   └── routes_should_not_end_in_slash
+│   └── pre-commit
+├── .envrc
+├── tools
+│   ├── migrations
+│   │   └── run.sh
+│   ├── add_feed.py
+│   ├── feed_info.py
+│   ├── _playground.py
+│   ├── article_crawler.py
+│   ├── __init__.py
+│   ├── old
+│   │   ├── remove_text_duplicates.py
+│   │   ├── add_standard_topics.py
+│   │   ├── add_word_rank.py
+│   │   ├── tag_topics_in_danish.py
+│   │   ├── bookmark_info.py
+│   │   ├── fix_bookmark_learned_status.py
+│   │   ├── exercise_analysis.py
+│   │   ├── fix_text_duplications.py
+│   │   ├── assert_db_anonymized.py
+│   │   ├── article_recommendations.py
+│   │   ├── consolidate_accounts.py
+│   │   ├── __init__.py
+│   │   ├── remove_unreferenced_articles.py
+│   │   ├── learner_level.py
+│   │   ├── recompute_fk_difficulties_for_polish.py
+│   │   ├── update_particular_tag.py
+│   │   ├── learner_stats.py
+│   │   ├── tag_existing_articles.py
+│   │   ├── update_feed.py
+│   │   ├── forget_user.py
+│   │   ├── add_all_cohorts_to_teacher.py
+│   │   ├── past_exercises_for_user.py
+│   │   ├── flatten_unicode_characters.py
+│   │   ├── add_article_id_to_text.py
+│   │   ├── users_recently_active.py
+│   │   ├── mysql_to_elastic.py
+│   │   └── cleanup_non_content_bits.py
+│   ├── mark_broken_articles.py
+│   ├── feed_retrieval.py
+│   ├── sh
+│   │   ├── update_dock.sh
+│   │   ├── live-log.sh
+│   │   ├── live_show_exercise_outcomes.sh
+│   │   ├── run_tests.sh
+│   │   └── create_test_db.sh
+│   ├── remove_unreferenced_articles.py
+│   ├── delete_dev_users.py
+│   ├── activity_monitor.py
+│   ├── anonymize_users.py
+│   ├── update_article_content.py
+│   ├── rename_feed.py
+│   └── sql
+├── env_var_defs_default.py
+├── Dockerfile.development
+├── LICENSE
+├── Dockerfile
+├── MANIFEST.in
+├── start.py
+├── setup.py
+├── run_tests.sh
+├── default_docker.cfg
+├── .github
+│   └── workflows
+├── zeeguu_api.wsgi
+├── default_api.cfg
+└── cleanup.sh

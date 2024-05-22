@@ -1,0 +1,5 @@
+../api/zeeguu/api/endpoints/teacher_dashboard/cohorts.py
+    F 73:0 create_own_cohort - C
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: C (11.0)

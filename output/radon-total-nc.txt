@@ -1,0 +1,29 @@
+../api/zeeguu/core/content_recommender/elastic_recommender.py
+    F 231:0 topic_filter_for_user - C
+../api/zeeguu/core/content_retriever/article_downloader.py
+    F 59:0 download_from_feed - D
+../api/zeeguu/core/language/strategies/word_rank_difficulty_estimator.py
+    M 43:4 WordRankDifficultyEstimator.word_rank_readability_score - C
+../api/zeeguu/core/language/strategies/word_history_difficulty_estimator.py
+    M 79:4 WordHistoryDifficultyEstimator.difficulty - C
+    M 130:4 WordHistoryDifficultyEstimator.difficulty_until_timestamp - C
+../api/zeeguu/core/language/strategies/cognacy_wh_difficulty_estimator.py
+    M 36:4 CognacyWordHistoryDifficultyEstimator.difficulty_until_timestamp - D
+../api/zeeguu/core/model/user.py
+    M 663:4 User.levels_for - C
+../api/zeeguu/core/model/bookmark.py
+    M 188:4 Bookmark.json_serializable_dict - C
+../api/zeeguu/core/nlp_pipeline/alignment_errant.py
+    M 31:4 ERRANT_Alignment.align - C
+../api/zeeguu/core/nlp_pipeline/confusion_generator.py
+    M 70:4 NoiseGenerator._conf_generate_confusion_words - D
+../api/zeeguu/core/nlp_pipeline/automatic_gec_tagging.py
+    M 319:4 AutoGECTagging.anottate_clues - F
+    M 220:4 AutoGECTagging.generate_labels - E
+    M 157:4 AutoGECTagging._merge_missing - D
+    C 133:0 AutoGECTagging - D
+../api/zeeguu/api/endpoints/teacher_dashboard/cohorts.py
+    F 73:0 create_own_cohort - C
+
+15 blocks (classes, functions, methods) analyzed.
+Average complexity: D (21.6)
